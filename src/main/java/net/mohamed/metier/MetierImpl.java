@@ -1,8 +1,14 @@
 package net.mohamed.metier;
 
 import net.mohamed.dao.IDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component("metier")
 public class MetierImpl implements IMetier {
+    @Autowired
+    @Qualifier("d2")
     private IDao dao; // Couplage faible
 
     /**
