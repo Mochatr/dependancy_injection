@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Déclaration du DAO Version 2 -->
+    <bean id="d" class="net.mohamed.ext.DaoImplV2"/>
+
+    <!-- Déclaration du Metier avec injection du DAO par setter -->
+    <bean id="metier" class="net.mohamed.metier.MetierImpl">
+        <property name="dao" ref="d"/>
+    </bean>
+
+</beans>
