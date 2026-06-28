@@ -2,7 +2,7 @@
 
 **Module :** Architecture JEE et Systèmes Distribués  
 **Projet :** BDCC-IOC  
-**Auteur :** Mohamed  
+**Auteur :** Mohamed CHATR
 **Technologies :** Java 21, Spring Framework 7.0.6, Maven
 
 ---
